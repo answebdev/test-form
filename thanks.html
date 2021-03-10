@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
     <title>Thank You</title>
 </head>
 
@@ -20,10 +27,33 @@
         font-family: Arial, Helvetica, sans-serif;
         letter-spacing: 1px;
     }
+
+    form {
+        text-align: center;
+    }
+
+    #back-btn {
+        margin-top: 20px;
+        background-color: #2980b9;
+        color: #f7f7f7;
+        border-color: #2980b9;
+        letter-spacing: 1px
+    }
+
+    #back-btn:hover {
+        background-color: #f7f7f7;
+        color: #2980b9;
+        transition: 0.2s linear;
+    }
 </style>
 
 <body>
     <h1 style='text-align: center; margin-top: 200px;'>Thank you!</h1>
+
+    <form>
+        <a class="btn btn-primary" id="back-btn" onclick="history.back()" role="button"><i
+                class="fas fa-arrow-left"></i> BACK</a>
+    </form>
 </body>
 
 </html>
