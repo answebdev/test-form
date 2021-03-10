@@ -13,7 +13,14 @@ https://formsubmit.co/ -->
 
 <style>
     body {
-        background-color: salmon;
+        background: #2BC0E4;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #EAECC6, #2BC0E4);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     }
 </style>
 
@@ -27,6 +34,8 @@ https://formsubmit.co/ -->
         <input type="text" name="message" placeholder="Write your message here" required>
         <!-- Disable reCAPTCHA: -->
         <input type="hidden" name="_captcha" value="false">
+        <!-- Honeypot: -->
+        <input type="text" name="_honey" style="display:none">
         <!-- Email Template: -->
         <input type="hidden" name="_template" value="table">
         <button type="submit">Send</button>
