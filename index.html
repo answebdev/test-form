@@ -115,7 +115,7 @@ https://formsubmit.co/ -->
             <input type="text" name="_honey" style="display:none">
             <!-- Email Template (the template with which to view the messages you receive): -->
             <input type="hidden" name="_template" value="table">
-            <button onclick="myFunction()" type="submit">Send</button>
+            <button onclick="myFunction()" type="submit" value='submit'>Send</button>
         </form>
     </div>
 
@@ -125,16 +125,15 @@ https://formsubmit.co/ -->
 
     //document.getElementById("submit-btn").addEventListener("click", handleSubmit);
 
-    function myFunction(e) {
-        e.preventDefault()
-        const name = document.getElementById('name');
-        const email = document.getElementById('email');
-        const subject = document.getElementById('subject');
-        const msg = document.getElementById('msg');
-        name.value = '';
-        email.value = '';
-        subject.value = '';
-        msg.value = '';
+    function myFunction() {
+        // e.preventDefault()
+
+
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('subject').value = '';
+        document.getElementById('msg').value = '';
+
     }
 
 </script>
