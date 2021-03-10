@@ -103,22 +103,40 @@ https://formsubmit.co/ -->
             <input type="hidden" name="_subject" value="You received a new email!">
             <!-- Redirect to Success Page: -->
             <input type="hidden" name="_next" value="https://answebdev.github.io/test-form/thanks.html">
-            <input type="text" name="name" placeholder="Name" required><br />
-            <input type="email" name="email" placeholder="Email Address" required><br />
-            <input type="text" name="subject" placeholder="Subject" required><br />
+            <input id='name' type="text" name="name" placeholder="Name" required><br />
+            <input id='email' type="email" name="email" placeholder="Email Address" required><br />
+            <input id='subject' type="text" name="subject" placeholder="Subject" required><br />
             <!-- <input type="text" name="message" placeholder="Write your message here" required><br /> -->
 
-            <textarea name="message" rows="4" placeholder="Message" required></textarea><br />
+            <textarea id='msg' name="message" rows="4" placeholder="Message" required></textarea><br />
             <!-- Disable reCAPTCHA: -->
             <input type="hidden" name="_captcha" value="false">
             <!-- Honeypot: -->
             <input type="text" name="_honey" style="display:none">
             <!-- Email Template (the template with which to view the messages you receive): -->
             <input type="hidden" name="_template" value="table">
-            <button type="submit">Send</button>
+            <button id='submit-btn' type="submit">Send</button>
         </form>
     </div>
 
 </body>
+
+<script>
+
+    document.getElementById("submit-btn").addEventListener("click", handleSubmit);
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const subject = document.getElementById('subject');
+        const msg = document.getElementById('msg');
+        name.value = '';
+        email.value = '';
+        subject.value = '';
+        msg.value = '';
+    }
+
+</script>
 
 </html>
