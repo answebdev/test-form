@@ -22,9 +22,13 @@ https://formsubmit.co/ -->
     <form action="https://formsubmit.co/britvaica@netscape.net" method="POST">
         <input type="hidden" name="_subject" value="You received a new email!">
         <input type="email" name="email" placeholder="Email Address" required>
+        <!-- Redirect to Success Page: -->
         <input type="hidden" name="_next" value="https://answebdev.github.io/test-form/thanks.html">
         <input type="text" name="message" placeholder="Write your message here" required>
+        <!-- Disable reCAPTCHA: -->
         <input type="hidden" name="_captcha" value="false">
+        <!-- Email Template: -->
+        <input type="hidden" name="_template" value="table">
         <button type="submit">Send</button>
     </form>
 </body>
