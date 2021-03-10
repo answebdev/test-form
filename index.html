@@ -11,6 +11,12 @@
 <!-- Source video: https://www.youtube.com/watch?v=r4RQ38EoLds
 https://formsubmit.co/ -->
 
+<style>
+    body {
+        background-color: salmon;
+    }
+</style>
+
 <body>
 
     <form action="https://formsubmit.co/britvaica@netscape.net" method="POST">
@@ -18,6 +24,7 @@ https://formsubmit.co/ -->
         <input type="email" name="email" placeholder="Email Address" required>
         <input type="hidden" name="_next" value="https://answebdev.github.io/test-form/thanks.html">
         <input type="text" name="message" placeholder="Write your message here" required>
+        <input type="hidden" name="_captcha" value="false">
         <button type="submit">Send</button>
     </form>
 </body>
