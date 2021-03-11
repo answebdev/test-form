@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -21,7 +22,7 @@ MaterializeCSS CDNs: https://materializecss.com/getting-started.html -->
 
 <style>
     .main {
-        margin: 100px auto;
+        margin: 50px auto;
         text-align: center;
         width: 50%;
     }
@@ -29,10 +30,15 @@ MaterializeCSS CDNs: https://materializecss.com/getting-started.html -->
     .row .col.s6 {
         width: 100%;
     }
+
+    /* #submit-btn {
+        background-color: steelblue;
+    } */
 </style>
 
 <body>
     <div class="main">
+        <h4><strong>Contact Me</strong></h4>
         <form action="https://formsubmit.co/britvaica@netscape.net" method="POST">
             <!-- This is the message you see when you receive an email: -->
             <!-- <input type="hidden" name="_subject" value="You received a new email!"> -->
@@ -90,7 +96,7 @@ MaterializeCSS CDNs: https://materializecss.com/getting-started.html -->
             </div>
 
             <div class="input-field col s12">
-                <button class="btn waves-effect waves-light" type="submit">Submit</button>
+                <button id='submit-btn' class="btn waves-effect waves-light" type="submit">Submit</button>
             </div>
         </form>
 
